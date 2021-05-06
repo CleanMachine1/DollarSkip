@@ -51,6 +51,10 @@ sudo rm -r ./DollarSkip
 
 ## How this works
 
+DollarSkip makes a binary file called $, in return whenever the first word of a command is $ on its own, Linux see this as a application, since when installing, the $ file is moved to /usr/bin
+
+It can have side effects and if any occur, just run the uninstallation and tell me what went wrong!
+
 ## Side Note
 
 This project was a learning experience for me, since my C needs to improve!

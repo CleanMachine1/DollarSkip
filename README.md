@@ -7,6 +7,7 @@ DollarSkip is a short piece of C code designed to ignore the dollar symbol at th
 It aims to solve the annoyance of copying commands and having the annoying error
 
 `$: command not found`
+
 ## Installation
 
 You must be running Linux and have Git installed.
@@ -28,7 +29,7 @@ Open a terminal and run the command:
 
 `$ echo 1`
 
-If you get 
+If you get
 
 `1`
 

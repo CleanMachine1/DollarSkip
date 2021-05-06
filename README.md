@@ -49,6 +49,8 @@ cd ..
 sudo rm -r ./DollarSkip
 ```
 
+## How this works
+
 ## Side Note
 
 This project was a learning experience for me, since my C needs to improve!

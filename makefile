@@ -1,7 +1,7 @@
 make :
-	gcc dollarskip.c -o $.temp
+	gcc dollarskip.c -o temp
 install :
-	cp \temp /usr/bin/\$
+	cp temp /usr/bin/\$
 uninstall :
 	rm /usr/bin/\$
 clean :

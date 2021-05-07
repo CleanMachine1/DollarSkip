@@ -18,7 +18,7 @@ To install, run the following commands in a terminal:
 cd ~/ # Or your place of choice for Git repos
 git clone https://github.com/CleanMachine1/DollarSkip
 cd DollarSkip
-make #This makes the binary, ignore warnings.
+make #This makes the binary
 sudo make install
 make clean
 ```

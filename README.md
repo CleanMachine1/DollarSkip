@@ -60,12 +60,12 @@ It can have side effects and if any occur, just run the uninstallation and tell 
 
 This project was a learning experience for me, since my C needs to improve!
 
-I AM NOT RESPONSIBLE FOR ANY DAMAGE TO YOUR SYSTEM!
-MAX CHARACTER COUNT IN A SINGLE COMMAND IS 4000!
-ANYTHING OVER MAY CREATE A SEGMENTATION FAULT!
+I am not responsible for any damage to your system!
+max character count in a single command is 4000!
+anything over may create a segmentation fault!
 
-IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE. (MIT License)
+in no event shall the
+authors or copyright holders be liable for any claim, damages or other
+liability, whether in an action of contract, tort or otherwise, arising from,
+out of or in connection with the software or the use or other dealings in the
+software. (MIT license)

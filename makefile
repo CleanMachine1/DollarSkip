@@ -6,3 +6,5 @@ uninstall :
 	rm /usr/bin/\$
 clean :
 	rm temp
+test :
+	gcc dollarskip.c -o temp -Wall

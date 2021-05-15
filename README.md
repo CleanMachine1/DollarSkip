@@ -8,11 +8,23 @@ It aims to solve the annoyance of copying commands and having the annoying error
 
 `$: command not found`
 
+while removing the need to then manually remove the "$" sign.
+
 ## Installation
 
-You must be running Linux and have Git installed.
+Download newest binary from https://github.com/CleanMachine1/DollarSkip/releases/latest
 
 To install, run the following commands in a terminal:
+
+```bash
+chmod +x "$"
+sudo mv ~/Downloads/\$ /usr/bin/\$
+```
+
+### Manual compiling
+You must be running Linux and have Git installed.
+
+To compile, run these lines terminal:
 
 ```bash
 cd ~/ # Or your place of choice for Git repos
@@ -44,15 +56,12 @@ please report an issue in the repo.
 ## Uninstallation
 
 ```bash
-cd ~/DollarSkip
-sudo make uninstall
-cd .. 
-sudo rm -r ./DollarSkip
+sudo rm /usr/bin/\$
 ```
 
 ## How this works
 
-DollarSkip makes a binary file called $, in return whenever the first word of a command is $ on its own, Linux see this as a application, since when installing, the $ file is moved to /usr/bin
+DollarSkip makes a binary file called "$", in return whenever the first word of a command is $ on its own, Linux see this as a application, since when installing, the $ file is moved to /usr/bin. 
 
 It can have side effects and if any occur, just run the uninstallation and tell me what went wrong!
 

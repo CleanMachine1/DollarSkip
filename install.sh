@@ -9,8 +9,8 @@ if ! which make > /dev/null; then
 fi
 
 git clone https://github.com/CleanMachine1/DollarSkip
-​cd​ DollarSkip
-make ​#​This makes the binary​
+cd DollarSkip
+make 
 sudo make install
 make clean
 rm -rf DollarSkip/

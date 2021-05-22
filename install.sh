@@ -13,8 +13,9 @@ cd DollarSkip
 make 
 sudo make install
 make clean
+cd ..
 rm -rf DollarSkip/
 
 echo "If you see 'It Works!', then it works!"
-
+sleep 1 
 $ echo "It Works!"

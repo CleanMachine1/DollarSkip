@@ -10,6 +10,14 @@ It aims to solve the annoyance of copying commands and having the annoying error
 
 ## Installation
 
+### Automated install
+
+You need wget installed
+```
+wget -qO- https://raw.githubusercontent.com/CleanMachine1/DollarSkip/master/install.sh | bash
+```
+### Manual install
+
 You must be running Linux and have Git installed.
 
 To install, run the following commands in a terminal:

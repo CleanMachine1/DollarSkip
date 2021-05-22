@@ -19,3 +19,4 @@ rm -rf DollarSkip/
 echo "If you see 'It Works!', then it works!"
 sleep 1 
 $ echo "It Works!"
+exit

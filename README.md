@@ -10,7 +10,19 @@ It aims to solve the annoyance of copying commands and having the annoying error
 
 ## Installation
 
-You must be running Linux and have Git installed.
+### 1-Liner install
+
+__You need to have **curl** installed to run this command__
+
+To install, run the following command in a terminal
+
+```
+curl -sSl https://raw.githubusercontent.com/CleanMachine1/DollarSkip/master/install.sh | bash
+```
+
+### Manual install
+
+__You need to have **git** and **make** installed to install__
 
 To install, run the following commands in a terminal:
 
@@ -44,10 +56,13 @@ please report an issue in the repo.
 ## Uninstallation
 
 ```bash
-cd ~/DollarSkip
+cd ~/DollarSkip # Or where you put the Git directory.
 sudo make uninstall
 cd .. 
 sudo rm -r ./DollarSkip
+
+# If the dollar skip doesn't exist, simply run the following command
+sudo rm /usr/bin/\$
 ```
 
 ## How this works

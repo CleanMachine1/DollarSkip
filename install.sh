@@ -15,6 +15,6 @@ sudo make install
 make clean
 rm -rf DollarSkip/
 
-echo "If you see the line below, then its working!
+echo "If you see 'It Works!', then it works!"
 
-$ echo "e"
+$ echo "It Works!"

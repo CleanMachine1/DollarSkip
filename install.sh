@@ -38,7 +38,7 @@ else
       echo -e "\e[1m\"DollarSkip\" folder already exists, would you like to update it (git pull)?\e[0m"
       read -r answer
       if [[ "$answer" =~ [yY] ]]; then
-         cd DollarSkip || error "Failed to enter DollarSKip folder!"
+         cd DollarSkip || error "Failed to enter DollarSkip folder!"
          git pull || error "Failed to run \"git pull\"!"
          break
       else

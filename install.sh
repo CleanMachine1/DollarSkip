@@ -7,7 +7,7 @@ function error() {
 
 if ! command -v make > /dev/null; then
    while true; do
-      echo -e "make not found! Install it? (y/n) \c"
+      echo -n "make not found! Install it? [y/n]"
       read -r answer
       if [[ "$answer" =~ [yY] ]]; then
          sudo apt install -y make || error "Failed to install make!"
@@ -20,7 +20,7 @@ fi
 
 if ! command -v git > /dev/null; then
    while true; do
-      echo -e "git not found! Install it? (y/n) \c"
+      echo -ne "git not found! Install it? [y/n] \c"
       read -r answer
       if [[ "$answer" =~ [yY] ]]; then
          sudo apt install -y git || error "Failed to install git!"
@@ -35,7 +35,7 @@ if [[ ! -d DollarSkip ]]; then
    git clone https://github.com/CleanMachine1/DollarSkip.git || error "Failed to clone DollarSkip repository!"
 else
    while true; do
-      echo -e "\e[1m\"DollarSkip\" folder already exists, would you like to update it (git pull)?\e[0m"
+      echo -ne "\e[1m\"DollarSkip\" folder already exists, would you like to update it (git pull) [y/n]?\e[0m"
       read -r answer
       if [[ "$answer" =~ [yY] ]]; then
          cd DollarSkip || error "Failed to enter DollarSkip folder!"
@@ -46,7 +46,6 @@ else
       fi
    done
 fi
-cd DollarSkip || error "Failed to enter DollarSkip folder!"
 make || error "Failed to run \"make\"!"
 sudo make install || error "Failed to run \"sudo make install\"!"
 make clean

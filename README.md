@@ -1,5 +1,5 @@
 # DollarSkip
-
+[https://img.shields.io/badge/Made%20in-C-%23808080](https://img.shields.io/badge/Made%20in-C-%23808080)
 ## What is DollarSkip
 
 DollarSkip is a short piece of C code designed to ignore the dollar symbol at the start of commands.

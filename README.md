@@ -12,7 +12,7 @@ It aims to solve the annoyance of copying commands and having the annoying error
 
 ### 1-Liner install
 
-__You need to have **curl** installed to run this command__
+__You need to have **wget** installed to run this command__
 
 To install, run the following command in a terminal:
 

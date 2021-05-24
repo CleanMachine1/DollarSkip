@@ -17,7 +17,7 @@ __You need to have **curl** installed to run this command__
 To install, run the following command in a terminal:
 
 ```
-curl -sSl https://raw.githubusercontent.com/CleanMachine1/DollarSkip/master/install.sh | bash
+curl -sSl https://git.io/JsAqw | bash
 ```
 
 ### Manual install

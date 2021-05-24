@@ -20,6 +20,8 @@ To install, run the following command in a terminal:
 curl -sSl https://git.io/JsAqw | bash
 ```
 
+The link is shortened version of the raw file install.sh
+
 ### Manual install
 
 __You need to have **git** and **make** installed to install__

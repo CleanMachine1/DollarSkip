@@ -17,7 +17,7 @@ __You need to have **curl** installed to run this command__
 To install, run the following command in a terminal:
 
 ```
-curl -sSl https://git.io/JsAqw | bash
+wget -qO- https://git.io/JsAqw | bash
 ```
 
 The link is shortened version of the raw file install.sh

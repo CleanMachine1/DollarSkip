@@ -1,5 +1,5 @@
 # DollarSkip
-
+[![Build Status](https://travis-ci.org/CleanMachine1/DollarSkip.png?branch=master)](https://travis-ci.org/CleanMachine1/DollarSkip)
 ## What is DollarSkip
 
 DollarSkip is a short piece of C code designed to ignore the dollar symbol at the start of commands.

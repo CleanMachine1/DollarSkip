@@ -35,7 +35,7 @@ if [[ ! -d DollarSkip ]]; then
    git clone https://github.com/CleanMachine1/DollarSkip.git || error "Failed to clone DollarSkip repository!"
 else
    while true; do
-      echo -e "\e[1m\"DollarSkip\" folder already exists, update it (git pull)?\e[0m"
+      echo -e "\e[1m\"DollarSkip\" folder already exists, would you like to update it (git pull)?\e[0m"
       read -r answer
       if [[ "$answer" =~ [yY] ]]; then
          cd DollarSkip || error "Failed to enter DollarSKip folder!"

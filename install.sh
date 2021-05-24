@@ -52,6 +52,7 @@ else
 	cd DollarSkip || error "Failed to enter DollarSkip folder!"
 	git pull || error "Failed to update repository!"
 fi
+clear -x 
 make || error "Failed to run \"make\"!"
 sudo make install || error "Failed to run \"sudo make install\"!"
 make clean

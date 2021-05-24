@@ -6,7 +6,7 @@ function error() {
 }
 
 function pkg-manager() {
-	if [[ $run == 1 ]]; then
+	if [[ $run != 1 ]]; then
 		if command -v apt >/dev/null ; then
 			pkg="apt"
 		elif command -v pacman >/dev/null ; then

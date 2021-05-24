@@ -18,7 +18,7 @@ function pkg-manager() {
 	fi
 }
 
-if ! command -v make > /dev/null; then
+if ! command -v make >/dev/null; then
 	pkg-manager
 	if [[ "$pkg" == "apt" ]]; then
 		sudo apt install -y make || error "Failed to install make!"
@@ -27,7 +27,16 @@ if ! command -v make > /dev/null; then
 	fi
 fi
 
-if ! command -v git > /dev/null; then
+if ! command -v gcc >/dev/null ; then
+	pkg-manager
+	if [[ "$pkg" == "apt" ]]; then
+		sudo apt install -y gcc || error "Failed to install make!"
+	elif [[ "$pkg" == "pacman" ]]; then
+		sudo pacman -S --noconfirm gcc || error "Failed to install make!"
+	fi
+fi
+
+if ! command -v git >/dev/null; then
 	pkg-manager
 	if [[ "$pkg" == "apt" ]]; then
 		sudo apt install -y git || error "Failed to install git!"

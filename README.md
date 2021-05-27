@@ -20,7 +20,7 @@ To install, run the following command in a terminal:
 wget -qO- https://git.io/JsAqw | bash
 ```
 
-The link is shortened version of the raw file install.sh
+The link is shortened version of https://raw.githubusercontent.com/CleanMachine1/DollarSkip/master/install.sh.
 
 ### Manual install
 

@@ -24,7 +24,7 @@ The link is shortened version of https://raw.githubusercontent.com/CleanMachine1
 
 ### Manual install
 
-__To download and compile DollarSkip you need **git** (to download the files) and **make** (to make compilation easier)__
+__To download and compile DollarSkip you need **Git** (to download the files) and **Make** (to make compilation easier)__
 
 <details>
 <summary>To install DollarSkip without Git or Make</summary>

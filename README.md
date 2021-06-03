@@ -58,8 +58,8 @@ please report an issue in the repo.
 ## Uninstallation
 
 ```bash
-cd ~/DollarSkip # Or where you put the Git directory.
-sudo make uninstall
+cd ~/DollarSkip # Or where you put the Git directory
+sudo make uninstall # Remove the binary in /usr/bin
 cd .. 
 rm -rf ./DollarSkip
 

@@ -61,9 +61,10 @@ please report an issue in the repo.
 cd ~/DollarSkip # Or where you put the Git directory.
 sudo make uninstall
 cd .. 
-sudo rm -r ./DollarSkip
+rm -rf ./DollarSkip
 
-# If the dollar skip doesn't exist, simply run the following command
+# If the DollarSkip directory doesn't exist, simply run the following command:
+
 sudo rm /usr/bin/\$
 ```
 

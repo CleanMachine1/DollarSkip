@@ -27,8 +27,10 @@ The link is shortened version of https://raw.githubusercontent.com/CleanMachine1
 __To download and compile DollarSkip you need **git** (to download the files) and **make** (to make compilation easier)__
 
 <details>
-<summary><b>To install DollarSkip without Git or Make</b></summary>
-If you don't want to use Git and Make, you can download the zip from [here](https://github.com/CleanMachine1/DollarSkip/archive/refs/heads/master.zip) and compile `dollarskip.c` with `gcc dollarskip.c -o temp`, then move `temp` to `/usr/bin/$` with `sudo mv temp /usr/bin/\$`.
+<summary>To install DollarSkip without Git or Make</summary>
+
+If you don't want to use Git and Make, you can download the zip from [here](https://github.com/CleanMachine1/DollarSkip/archive/refs/heads/master.zip) and compile `dollarskip.c` with `gcc dollarskip.c -o temp` then move `temp` to `/usr/bin/$` with `sudo mv temp /usr/bin/\$`.
+
 </details>
 
 To install, run the following commands in a terminal:

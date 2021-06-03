@@ -33,7 +33,7 @@ cd ~/ # Or your place of choice for Git repositories
 git clone https://github.com/CleanMachine1/DollarSkip # Or use SSH
 cd DollarSkip 
 make # This makes the binary
-sudo make install # This moves the binary to /usr/bin
+sudo make install # This copies the binary to /usr/bin and names it '$'
 make clean # Removes the binary created above since it has already been moved
 ```
 

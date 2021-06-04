@@ -24,17 +24,24 @@ The link is shortened version of https://raw.githubusercontent.com/CleanMachine1
 
 ### Manual install
 
-__You need to have **git** and **make** installed to install__
+__To download and compile DollarSkip you need **Git** (to download the files) and **Make** (to make compilation easier)__
+
+<details>
+<summary>To install DollarSkip without Git or Make</summary>
+
+If you don't want to use Git and Make, you can download the zip from [here](https://github.com/CleanMachine1/DollarSkip/archive/refs/heads/master.zip) and compile `dollarskip.c` with `gcc dollarskip.c -o temp` then move `temp` to `/usr/bin/$` with `sudo mv temp /usr/bin/\$`.
+
+</details>
 
 To install, run the following commands in a terminal:
 
 ```bash
-cd ~/ # Or your place of choice for Git repos
-git clone https://github.com/CleanMachine1/DollarSkip
-cd DollarSkip
-make #This makes the binary
-sudo make install
-make clean
+cd ~/ # Or your place of choice for Git repositories
+git clone https://github.com/CleanMachine1/DollarSkip # Or use SSH
+cd DollarSkip 
+make # This makes the binary
+sudo make install # This copies the binary to /usr/bin and names it '$'
+make clean # Removes the binary created above since it has already been moved
 ```
 
 After you can test to see if it works.
@@ -58,12 +65,13 @@ please report an issue in the repo.
 ## Uninstallation
 
 ```bash
-cd ~/DollarSkip # Or where you put the Git directory.
-sudo make uninstall
+cd ~/DollarSkip # Or where you put the Git directory
+sudo make uninstall # Remove the binary in /usr/bin
 cd .. 
-sudo rm -r ./DollarSkip
+rm -rf ./DollarSkip
 
-# If the dollar skip doesn't exist, simply run the following command
+# If the DollarSkip directory doesn't exist, simply run the following command:
+
 sudo rm /usr/bin/\$
 ```
 
@@ -77,12 +85,12 @@ It can have side effects and if any occur, just run the uninstallation and tell 
 
 This project was a learning experience for me, since my C needs to improve!
 
-I am not responsible for any damage to your system!
-max character count in a single command is 8000!
-anything over may create a segmentation fault!
+__I am not responsible for any damage to your system!__
+Max character count in a single command is 8000!
+Anything over may create a segmentation fault!
 
-in no event shall the
-authors or copyright holders be liable for any claim, damages or other
+In no event shall:
+The authors or copyright holders be liable for any claim, damages or other
 liability, whether in an action of contract, tort or otherwise, arising from,
 out of or in connection with the software or the use or other dealings in the
 software. (MIT license)

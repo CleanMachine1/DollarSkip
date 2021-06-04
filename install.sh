@@ -5,44 +5,36 @@ function error() {
 	exit 1
 }
 
-function pkg-manager() {
-	if [[ $run != 1 ]]; then
-		if command -v apt >/dev/null ; then
-			pkg="apt"
-		elif command -v pacman >/dev/null ; then
-			pkg="pacman"
-		else
-			error "No package manager found! please report this."
-		fi
-		run=1
+#installs the packages provided using the package manager that your system uses
+function pkg-install() {
+	if command -v apt >/dev/null ; then
+		sudo apt install -y $@
+	elif command -v pacman >/dev/null ; then
+		sudo pacman -S --noconfirm $@
+	else
+		error "No package manager found! please report this."
 	fi
 }
 
+# array that will contain all the packages to install
+depends=()
+
+#add the needed packages to the array decalred above if they are not installed
 if ! command -v make >/dev/null; then
-	pkg-manager
-	if [[ "$pkg" == "apt" ]]; then
-		sudo apt install -y make || error "Failed to install make!"
-	elif [[ "$pkg" == "pacman" ]]; then
-		sudo pacman -S --noconfirm make || error "Failed to install make!"
-	fi
+	depends+=("make")
 fi
 
 if ! command -v gcc >/dev/null ; then
-	pkg-manager
-	if [[ "$pkg" == "apt" ]]; then
-		sudo apt install -y gcc || error "Failed to install make!"
-	elif [[ "$pkg" == "pacman" ]]; then
-		sudo pacman -S --noconfirm gcc || error "Failed to install make!"
-	fi
+	depends+=("gcc")
 fi
 
 if ! command -v git >/dev/null; then
-	pkg-manager
-	if [[ "$pkg" == "apt" ]]; then
-		sudo apt install -y git || error "Failed to install git!"
-	elif [[ "$pkg" == "pacman" ]]; then
-		sudo pacman -S --noconfirm git || error "Failed to install git!"
-	fi
+	depends+=("git")
+fi
+
+# if the array isn't empty, install the packages using the package names it contains and the 'pkg-install' function
+if [[ "${depends[@]}" != "" ]]; then
+	pkg-install ${depends[@]}
 fi
 
 if [[ ! -d DollarSkip ]]; then

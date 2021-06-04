@@ -27,9 +27,3 @@ jobs:
               
       - name: make test
         run: make test
-        
-      - name: install shellcheck
-        run: sudo apt install shellcheck -y
-
-      - name: shellcheck install.sh
-        run: shellcheck install.sh

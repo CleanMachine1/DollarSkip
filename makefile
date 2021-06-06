@@ -1,3 +1,5 @@
+.SILENT: test
+
 make :
 	gcc dollarskip.c -o temp
 install :
@@ -6,5 +8,8 @@ uninstall :
 	rm /usr/bin/\$
 clean :
 	rm temp
-test :
+build-debug :
 	gcc dollarskip.c -o temp -Wall
+test :
+	@echo -e "\e[1mIf you see 'It Works!', then the test was succesful!\e[0m"
+	./temp $ echo "It Works!"

@@ -4,7 +4,7 @@ int main(int argc, char **argv)
 {
 	char command[8096] = {0};
 	if(argc>1) {
-		char shell[10], *env=getenv("SHELL"); //get the env var 'SHELL'
+		char shell[128] = {0}, *env=getenv("SHELL"); //get the env var 'SHELL'
 		if(strcmp(env, "")) { //if env != ""
 			strcpy(shell, env); //copy env to shell
 			strcat(shell, " -c \'"); //add " -c '"

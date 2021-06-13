@@ -12,7 +12,7 @@ int main(int argc, char **argv)
     }
     /****
     * remove the space from the end of the command
-    * for example the command is "ls -l", it takes up 5 characters from the array (command variable) + a space at the end caused by the for loop above.
+    * for example the command is "ls -l", it takes up 5 characters from the array (command variable) + a space at the end caused by the for loop above + a character at the end that is reserved for a NUL character.
     * in this case 'strlen(command)' will return 6, remove 1, and you get the location of the character in the array containing the extra space.
     * replace the space with NUL (null terminator), the end of the string.
     ****/

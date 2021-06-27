@@ -23,5 +23,6 @@ jobs:
               
       - name: build debug
         run: make build-debug
+        
       - name: make test
         run: make test

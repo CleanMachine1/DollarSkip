@@ -10,5 +10,3 @@ clean :
 	rm temp
 build-debug :
 	gcc dollarskip.c -o temp -Wall
-test :
-	./temp echo "It works"

@@ -24,5 +24,5 @@ jobs:
       - name: make
         run: make
         
-      - name: make test
-        run: make test
+      - name: test 
+        run: ./temp echo 1

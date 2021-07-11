@@ -7,7 +7,7 @@
 
 char **parse(char *input) {
     //will hold the command
-    char **command=malloc(sizeof(char *)*8);
+    char **command=malloc(sizeof(char *)*8096);
     //the separator for strtok
     char *separator=" ";
     //will hold the parsed output from strtok
@@ -29,7 +29,7 @@ char **parse(char *input) {
 
 int main(int argc, char **argv)
 {
-	char *input=malloc(sizeof(argv)*2+1);
+	char input[8096];
 	char **command;
 	pid_t child_pid;
 	int exit=0, stat_loc;
@@ -53,8 +53,6 @@ int main(int argc, char **argv)
 		} else {
 			waitpid(child_pid, &stat_loc, WUNTRACED); //parent process waits until child has finished
 		}
-
-		free(input);
 		free(command);
 	}
 	//if exit is 1 (set if the command failed to run), return from the child process

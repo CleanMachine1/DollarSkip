@@ -1,12 +1,12 @@
 .SILENT: test
 
-make :
+make: dollarskip.c
 	gcc dollarskip.c -o temp
-install :
+install: make
 	cp temp /usr/bin/\$
-uninstall :
+uninstall: install
 	rm /usr/bin/\$
-clean :
+clean: make
 	rm temp
-build-debug :
-	gcc dollarskip.c -o temp -Wall
+build-debug: dollarskip.c
+	gcc dollarskip.c -o temp -g -Wall

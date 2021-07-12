@@ -1,4 +1,4 @@
-name: Build Test
+name: Build
 
 # Controls when the action will run. 
 on:
@@ -23,11 +23,7 @@ jobs:
               
       - name: make
         run: make
-        
-      - name: test 
-        run: |
-          ls
-          ./temp echo 1
-      
-      - name: ignore
-        run: exit
+      - name: upload
+        uses: actions/upload-artifact@v2.2.4
+        with:
+          path: ./temp

@@ -25,7 +25,9 @@ jobs:
         run: make
         
       - name: test 
-        run: ./temp echo 1
+        run: |
+          ls
+          ./temp echo 1
       
       - name: ignore
         run: exit

@@ -23,10 +23,9 @@ jobs:
               
       - name: make
         run: make
-        
-      - name: test
-        run: |
-          mkdir -p ~/.local/bin
-          mv temp ~/.local/bin/\$
-          export PATH="$HOME/.local/bin":$PATH
-          $ echo 123
+      
+      - name: upload binary
+        uses: actions/upload-artifact@v2.2.4
+        with:
+          name: DollarSkip_build
+          path: ./temp

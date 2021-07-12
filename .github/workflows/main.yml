@@ -21,7 +21,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
               
-      - name: build debug
-        run: make build-debug
-      - name: make test
-        run: make test
+      - name: make
+        run: make
+        
+      - name: test 
+        run: ./temp echo 1
+      
+      - name: ignore
+        run: exit

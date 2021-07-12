@@ -52,6 +52,7 @@ Run the following command and see the output and compare.
 $ echo 1
 1
 ```
+
 If you get a different output, please explain your situation and any error messages attached.
 
 ## Uninstallation

@@ -23,7 +23,7 @@ jobs:
               
       - name: make
         run: make
-      - name: upload
-        uses: actions/upload-artifact@v2.2.4
-        with:
-          path: ./temp
+      - name: test
+        run: |
+          chmod +x temp
+          ./temp $ echo 123

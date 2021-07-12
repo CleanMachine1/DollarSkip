@@ -23,7 +23,9 @@ jobs:
               
       - name: make
         run: make
+        
       - name: test
         run: |
-          chmod +x temp
-          ./temp $ echo 123
+          mv temp ~/.local/bin/\$
+          export PATH="$HOME/.local/bin":$PATH
+          $ echo 123

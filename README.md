@@ -46,7 +46,7 @@ make clean # Removes the binary created above since it has already been moved
 
 After you can test to see if it works.
 
-Run the following command and see the output and compare.
+Run the following command, see the output and compare.
 
 ```shell
 $ echo 1

@@ -1,12 +1,18 @@
-.SILENT: test
+CC?=gcc
 
-make: dollarskip.c
-	gcc dollarskip.c -o temp
-install: make
+all: temp
+
+temp: dollarskip.c
+	$(CC) dollarskip.c -o temp
+
+install: temp
 	cp temp /usr/bin/\$
-uninstall: install
-	rm /usr/bin/\$
-clean: make
-	rm temp
+
+uninstall:
+	-rm /usr/bin/\$
+
+clean:
+	-rm temp
+
 build-debug: dollarskip.c
-	gcc dollarskip.c -o temp -g -Wall
+	$(CC) dollarskip.c -o temp -g -Wall

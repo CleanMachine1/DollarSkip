@@ -46,21 +46,14 @@ make clean # Removes the binary created above since it has already been moved
 
 After you can test to see if it works.
 
-Open a terminal and run the command:
+Run the following command, see the output and compare.
 
-`$ echo 1`
+```shell
+$ echo 1
+1
+```
 
-If you get
-
-`1`
-
-it works!
-
-If you get
-
-`$: command not found`
-
-please report an issue in the repo.
+If you get a different output, please explain your situation and any error messages attached.
 
 ## Uninstallation
 

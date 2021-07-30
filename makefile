@@ -1,15 +1,18 @@
-.SILENT: test
+CC?=gcc
 
-make :
-	gcc dollarskip.c -o temp
-install :
+all: temp
+
+temp: dollarskip.c
+	$(CC) dollarskip.c -o temp
+
+install: temp
 	cp temp /usr/bin/\$
-uninstall :
-	rm /usr/bin/\$
-clean :
-	rm temp
-build-debug :
-	gcc dollarskip.c -o temp -Wall
-test :
-	@echo -e "\e[1mIf you see 'It Works!', then the test was successful!\e[0m"
-	./temp $ echo "It Works!"
+
+uninstall:
+	-rm /usr/bin/\$
+
+clean:
+	-rm temp
+
+build-debug: dollarskip.c
+	$(CC) dollarskip.c -o temp -g -Wall

@@ -24,6 +24,15 @@ The link is shortened version of https://raw.githubusercontent.com/CleanMachine1
 
 ### Manual install
 
+### Arch-based
+
+```shell
+cd ~/ # Or your place of choice for Git repositories
+git clone https://github.com/CleanMachine1/DollarSkip # Or use SSH
+cd DollarSkip
+makepkg -si
+```
+
 __To download and compile DollarSkip you need **Git** (to download the files) and **Make** (to make compilation easier)__
 
 <details>
@@ -35,7 +44,7 @@ If you don't want to use Git and Make, you can download the zip from [here](http
 
 To install, run the following commands in a terminal:
 
-```bash
+```shell
 cd ~/ # Or your place of choice for Git repositories
 git clone https://github.com/CleanMachine1/DollarSkip # Or use SSH
 cd DollarSkip 
@@ -57,7 +66,7 @@ If you get a different output, please explain your situation and any error messa
 
 ## Uninstallation
 
-```bash
+```shell
 cd ~/DollarSkip # Or where you put the Git directory
 sudo make uninstall # Remove the binary in /usr/bin
 cd .. 

@@ -33,6 +33,8 @@ cd DollarSkip
 makepkg -si
 ```
 
+### Other
+
 __To download and compile DollarSkip you need **Git** (to download the files) and **Make** (to make compilation easier)__
 
 <details>

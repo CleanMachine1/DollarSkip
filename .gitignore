@@ -1,2 +1,9 @@
 temp
 .vscode
+
+# PKGBUILD files
+
+src/
+pkg/
+3.0.tar.gz
+dollarskip-3.0-1-any.pkg.tar.zst

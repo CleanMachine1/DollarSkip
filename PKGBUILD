@@ -6,7 +6,8 @@ pkgdesc="Skip the dollar!"
 arch=('any')
 url="https://github.com/CleanMachine1/DollarSkip"
 license=('MIT')
-depends('make')
+depends=('glibc')
+makedepends=('gcc' 'make' 'glibc')
 build() {
     cd DollarSkip-${pkgver}
     make

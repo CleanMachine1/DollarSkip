@@ -29,7 +29,7 @@ __To download and compile DollarSkip you need **Git** (to download the files) an
 <details>
 <summary>To install DollarSkip without Git or Make</summary>
 
-If you don't want to use Git and Make, you can download the zip from [here](https://github.com/CleanMachine1/DollarSkip/archive/refs/heads/master.zip) and compile `dollarskip.c` with `gcc dollarskip.c -o temp` then move `temp` to `/usr/bin/$` with `sudo mv temp /usr/bin/\$`.
+If you don't want to use Git and Make, you can download the zip from [here](https://github.com/CleanMachine1/DollarSkip/archive/refs/heads/master.zip) or you can download the most stable version [here](https://github.com/CleanMachine1/DollarSkip/archive/refs/tags/1.0.zip) and compile `dollarskip.c` with `gcc dollarskip.c -o temp` then move `temp` to `/usr/bin/$` with `sudo mv temp /usr/bin/\$`.
 
 </details>
 
@@ -46,21 +46,14 @@ make clean # Removes the binary created above since it has already been moved
 
 After you can test to see if it works.
 
-Open a terminal and run the command:
+Run the following command, see the output and compare.
 
-`$ echo 1`
+```shell
+$ echo 1
+1
+```
 
-If you get
-
-`1`
-
-it works!
-
-If you get
-
-`$: command not found`
-
-please report an issue in the repo.
+If you get a different output, please explain your situation and any error messages attached.
 
 ## Uninstallation
 

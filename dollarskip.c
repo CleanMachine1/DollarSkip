@@ -27,7 +27,7 @@ int main(int argc, char **argv)
 			for (int i=1; i<argc; i++){ //put the command in 'command',
 				strcat(strcat(command,argv[i])," ");
 			}
-			command[strlen(command) - 1] = '\0'; //and remove the space at the end.
+			command[strlen(command) - 1] = '\0'; // and remove the NULL space at the end.
 		}
 		//finally run the command using the system function and return the value that the system function returns
     		//possible return values: the return value of the command run: 127 means that the command failed. -1 if system() failed.

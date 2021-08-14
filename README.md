@@ -66,6 +66,9 @@ $ echo 1
 ```
 
 If you get a different output, please explain your situation and any error messages attached.
+## ZSH support
+
+ZSH's percentage prompt is now supported. To install, simply run `sudo make zshinstall`
 
 ## Uninstallation
 

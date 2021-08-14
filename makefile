@@ -8,6 +8,9 @@ temp: dollarskip.c
 install: temp
 	cp temp /usr/bin/\$
 
+zshinstall: temp
+	cp temp /usr/bin/\%
+
 uninstall:
 	-rm /usr/bin/\$
 

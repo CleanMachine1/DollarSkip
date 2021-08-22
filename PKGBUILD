@@ -1,7 +1,7 @@
 pkgname="dollarskip"
-pkgver="3.0"
+pkgver="3.1"
 pkgrel="1"
-source=(https://github.com/CleanMachine1/DollarSkip/archive/3.0.tar.gz)
+source=(https://github.com/CleanMachine1/DollarSkip/archive/3.1.tar.gz)
 pkgdesc="Skip the dollar!"
 arch=('any')
 url="https://github.com/CleanMachine1/DollarSkip"
@@ -15,6 +15,6 @@ build() {
 
 package() {
     cd DollarSkip-${pkgver} &&
-    install -m 755 -D temp "${pkgdir}/usr/bin/\$" 
+    install -m 755 -D temp "${pkgdir}/usr/local/bin/\$" 
 }
 sha256sums=('8826bd814c543566130152e6e2da02b0d43363ca51f5e806e208760918a2531e')

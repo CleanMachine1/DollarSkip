@@ -41,7 +41,7 @@ __To download and compile DollarSkip you need **Git** (to download the files) an
 <details>
 <summary>To install DollarSkip without Git or Make</summary>
 
-If you don't want to use Git and Make, you can download the zip from [here](https://github.com/CleanMachine1/DollarSkip/archive/refs/heads/master.zip) or you can download the most stable version [here](https://github.com/CleanMachine1/DollarSkip/archive/refs/tags/1.0.zip) and compile `dollarskip.c` with `gcc dollarskip.c -o temp` then move `temp` to `/usr/bin/$` with `sudo mv temp /usr/bin/\$`.
+If you don't want to use Git and Make, you can download the zip from [here](https://github.com/CleanMachine1/DollarSkip/archive/refs/heads/master.zip) or you can download the most stable version [here](https://github.com/CleanMachine1/DollarSkip/archive/refs/tags/3.1.zip) and compile `dollarskip.c` with `gcc dollarskip.c -o temp` then move `temp` to `/usr/local/bin/$` with `sudo mv temp /usr/local/bin/\$`.
 
 </details>
 
@@ -52,7 +52,7 @@ cd ~/ # Or your place of choice for Git repositories
 git clone https://github.com/CleanMachine1/DollarSkip # Or use SSH
 cd DollarSkip 
 make # This makes the binary
-sudo make install # This copies the binary to /usr/bin and names it '$'
+sudo make install # This copies the binary to /usr/local/bin and names it '$'
 make clean # Removes the binary created above since it has already been moved
 ```
 

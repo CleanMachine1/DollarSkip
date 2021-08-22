@@ -5,5 +5,5 @@ temp
 
 src/
 pkg/
-3.0.tar.gz
+3.*.tar.gz
 dollarskip*any.pkg.tar.zst

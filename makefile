@@ -1,4 +1,5 @@
-CC?=gcc
+CC ?= gcc
+PREFIX ?= /usr/local
 
 all: temp
 
@@ -6,10 +7,10 @@ temp: dollarskip.c
 	$(CC) dollarskip.c -o temp
 
 install: temp
-	cp temp /usr/bin/\$
+	cp temp $(PREFIX)/bin/\$
 
 uninstall:
-	-rm /usr/bin/\$
+	-rm $(PREFIX)/bin/\$
 
 clean:
 	-rm temp

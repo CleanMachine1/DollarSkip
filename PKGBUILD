@@ -17,4 +17,5 @@ package() {
     cd DollarSkip-${pkgver} &&
     install -m 755 -D temp "${pkgdir}/usr/local/bin/\$" 
 }
+
 sha256sums=('SKIP')

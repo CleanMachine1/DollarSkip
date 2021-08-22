@@ -71,13 +71,13 @@ If you get a different output, please explain your situation and any error messa
 
 ```shell
 cd ~/DollarSkip # Or where you put the Git directory
-sudo make uninstall # Remove the binary in /usr/bin
+sudo make uninstall # Remove the binary in /usr/local/bin/
 cd .. 
 rm -rf ./DollarSkip
 
 # If the DollarSkip directory doesn't exist, simply run the following command:
 
-sudo rm /usr/bin/\$
+sudo rm /usr/local/bin/\$ # or /usr/bin/\$ (depending on when you installed).
 ```
 
 ## How this works

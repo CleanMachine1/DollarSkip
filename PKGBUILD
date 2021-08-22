@@ -1,5 +1,5 @@
 pkgname="dollarskip"
-pkgver="3.1.1"
+pkgver="3.1.2"
 pkgrel="1"
 source=(https://github.com/CleanMachine1/DollarSkip/archive/3.1.2.tar.gz)
 pkgdesc="Skip the dollar!"

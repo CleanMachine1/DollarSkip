@@ -17,4 +17,4 @@ package() {
     cd DollarSkip-${pkgver} &&
     install -m 755 -D temp "${pkgdir}/usr/local/bin/\$" 
 }
-sha256sums=('8826bd814c543566130152e6e2da02b0d43363ca51f5e806e208760918a2531e')
+sha256sums=('b873e967df7e163df7eec92a94b4655ab4bdb85802333be2a0f4412d838c1a9d')

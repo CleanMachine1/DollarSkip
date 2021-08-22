@@ -18,4 +18,4 @@ package() {
     install -m 755 -D temp "${pkgdir}/usr/local/bin/\$" 
 }
 
-sha256sums=('SKIP')
+sha256sums=('bd46bdc03aa1cdd4b8cd4814091fee35b8f1c176d395ccb1c6eadf805e76045a')

@@ -7,7 +7,7 @@ temp: dollarskip.c
 	$(CC) dollarskip.c -o temp
 
 install: temp
-	install -m 755 -D temp $(PREFIX)/bin/\$
+	install -m 755 temp $(PREFIX)/bin/\$
 
 uninstall:
 	-rm $(PREFIX)/bin/\$

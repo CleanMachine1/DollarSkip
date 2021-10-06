@@ -23,15 +23,10 @@ wget -qO- https://git.io/JsAqw | bash
 
 The link is shortened version of https://raw.githubusercontent.com/CleanMachine1/DollarSkip/master/install.sh.
 
-### Manual install
+### Arch Based
 
-### Arch-based
-
-```shell
-cd ~/ # Or your place of choice for Git repositories
-git clone https://github.com/CleanMachine1/DollarSkip # Or use SSH
-cd DollarSkip
-makepkg -si
+```
+yay -S dollarskip
 ```
 
 ### Other

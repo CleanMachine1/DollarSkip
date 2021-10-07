@@ -23,15 +23,14 @@ wget -qO- https://git.io/JsAqw | bash
 
 The link is shortened version of https://raw.githubusercontent.com/CleanMachine1/DollarSkip/master/install.sh.
 
-### Manual install
+### Arch Based
 
-### Arch-based
+- https://aur.archlinux.org/packages/dollarskip/
 
-```shell
-cd ~/ # Or your place of choice for Git repositories
-git clone https://github.com/CleanMachine1/DollarSkip # Or use SSH
-cd DollarSkip
-makepkg -si
+The package can be installed with an AUR helper such yay:
+
+```
+yay -S dollarskip
 ```
 
 ### Other

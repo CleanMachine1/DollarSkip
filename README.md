@@ -27,7 +27,7 @@ The link is shortened version of https://raw.githubusercontent.com/CleanMachine1
 
 - https://aur.archlinux.org/packages/dollarskip/
 
-The package can be installed with an AUR helper such yay:
+The package can be installed with an AUR helper such as yay:
 
 ```
 yay -S dollarskip

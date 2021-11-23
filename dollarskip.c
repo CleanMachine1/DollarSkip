@@ -72,5 +72,5 @@ int main(int argc, char **argv) {
 		return system(command);
 	}
 	// if no arguments provided, do nothing and return 0
-	return 0;
+	return 1;
 }

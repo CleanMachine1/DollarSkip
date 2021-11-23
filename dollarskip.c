@@ -53,7 +53,7 @@ int main(int argc, char **argv) {
 			// collect arguments
 			char *args = collect_args(argc, argv, &argv_len);
 			// check that there is enough space in 'command'
-			assert(argv_len < COMMAND_MAX_SIZE);
+			assert(argv_len + strlen(shell_env) + 6 < COMMAND_MAX_SIZE); // 6 = strlen(" -c ''")
 			// and format them
 			snprintf(command, COMMAND_MAX_SIZE, "%s -c \'%s\'", shell_env, args);
 			free(args);

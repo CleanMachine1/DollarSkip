@@ -21,7 +21,7 @@ char *collect_args(int argc, char **argv, size_t *argv_size) {
 	size_t argv_len = 0;
 	char *args = NULL;
 
-	// get the size of all of argv + a space after each argument (last one for the nul character)
+	// get the size of all of argv + a space after each argument (last one for the null terminator)
 	for(int i = 1; i < argc; ++i) {
 		argv_len += strlen(argv[i]) + 1; // 1 for the space and nul character at the end
 	}

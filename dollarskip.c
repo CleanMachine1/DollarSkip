@@ -30,6 +30,7 @@ char *collect_args(int argc, char **argv, size_t *argv_size) {
 
 	// allocate memory for the argument string
 	args = malloc(argv_len);
+	if(args == NULL) exit(1);
 
 	// copy all of argv (exluding argv[0]) to args and add a space after each argument
 	for(int i = 1; i < argc; ++i) {

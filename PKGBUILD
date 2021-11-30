@@ -1,7 +1,7 @@
 pkgname="dollarskip"
 pkgver="3.1.3"
 pkgrel="1"
-source=(https://github.com/CleanMachine1/DollarSkip/archive/refs/tags/v3.1.3.tar.gz)
+source=(https://github.com/CleanMachine1/DollarSkip/archive/v3.1.3.tar.gz)
 pkgdesc="Skip the dollar!"
 arch=('any')
 url="https://github.com/CleanMachine1/DollarSkip"

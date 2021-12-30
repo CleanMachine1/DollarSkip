@@ -29,7 +29,7 @@ The link is shortened version of https://raw.githubusercontent.com/CleanMachine1
 
 The package can be installed with an AUR helper such as yay:
 
-```
+```shell
 yay -S dollarskip
 ```
 
@@ -85,9 +85,12 @@ DollarSkip makes a binary file called $, in return whenever the first word of a 
 
 It can have side effects and if any occur, just run the uninstallation and tell me what went wrong!
 
-## Side Note
+## Go version
 
-This project was a learning experience for me, since my C needs to improve!
+Now, there is also a version of dollarskip made in Go.
+Feel free to compile and use it as alternative to the C version.
+
+## Warning
 
 __I am not responsible for any damage to your system!__
 Max character count in a single command is 8000!

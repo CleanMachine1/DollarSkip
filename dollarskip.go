@@ -3,19 +3,17 @@ package main
 import (
 	"os"      // for capturing argv
 	"os/exec" // for running the commands
-	"strings" // editing the strings such as removing square brackets and adding spaces
+	"strings" // for unslicing the array
 )
 
 func main() {
-	input := os.Args[1:] // collects given arguments and 1: removes the binary name
-
-	var1 := strings.Join(input, " ") // convert to string rather than type string[] from args
-	var2 := strings.Trim(var1, "[]") // Remove square brackets from using 1: earlier
-
-	cmd := exec.Command(`bash`, `-c`, var2) // execute the command
+	args := os.Args[1:]                               // collects given arguments and 1: removes the binary name
+	unsliced_string := strings.Join(args, " ")        // convert to string rather than type []string from args
+	shell := os.Getenv("SHELL")                       // Using the env, save the shell
+	cmd := exec.Command(shell, `-c`, unsliced_string) // Define the command to be run
 	cmd.Stderr = os.Stderr
 	cmd.Stdout = os.Stdout
 	cmd.Stdin = os.Stdin
-	cmd.Run()
+	cmd.Run() // Run the command
 
 }

@@ -7,3 +7,8 @@ src/
 pkg/
 3.*.tar.gz
 dollarskip*any.pkg.tar.zst
+
+# Go version files
+
+main
+

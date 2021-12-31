@@ -51,7 +51,7 @@ typedef struct wrapper {
 } Wrapper;
 
 Wrapper handled_shell_builtins[] = {
-	{easter_egg, "e_egg"} // DollarSkip easter eff
+	{easter_egg, "e_egg"} // DollarSkip easter egg
 };
 #define HANDLED_SHELL_BUILTINS_SIZE (sizeof(handled_shell_builtins) / sizeof(handled_shell_builtins[0]))
 

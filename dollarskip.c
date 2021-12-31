@@ -16,7 +16,30 @@ int easter_egg() {
 
 /*** handled and unhandled shell builtins checks ***/
 const char *unhandled_shell_builtins[] = {
-	"cd"
+	"cd",
+	"alias",
+	"unalias",
+	"pushd",
+	"popd",
+	"dirs",
+	"read",
+	"set",
+	"readonly",
+	"unset",
+	"typeset",
+	"declare",
+	"disown",
+	"enable",
+	"export",
+	"exit", // doesn't do anything when run through DollarSkip
+	"fc",
+	"history",
+	"fg",
+	"getopts",
+	"hash", // we don't want it to report fake data dor the current shell (true for the shell in which it is run)
+	"jobs", // same reason as the one for 'hash'
+	"times", // same as above
+	"local"
 };
 #define UNHANDLED_SHELL_BUILTINS_SIZE (sizeof(unhandled_shell_builtins) / sizeof(unhandled_shell_builtins[0]))
 
@@ -66,7 +89,7 @@ void check_args(char *args) {
 			free(argsCopy);
 			exit(retval);
 		} else if(is_unhandled_shell_builtin(p)) {
-			fprintf(stderr, "\x1b[31;1m[ERROR: DollarSkip]: built-in shell commands aren't supported!\x1b[0m\n");
+			fprintf(stderr, "\x1b[31;1m[ERROR: DollarSkip]: '\x1b[97m%s\x1b[0;1;31m': built-in shell commands aren't supported!\x1b[0m\n", p);
 			free(args);
 			free(argsCopy);
 			exit(1);

@@ -36,7 +36,7 @@ const char *unhandled_shell_builtins[] = {
 	"history",
 	"fg",
 	"getopts",
-	"hash", // we don't want it to report fake data dor the current shell (true for the shell in which it is run)
+	"hash", // we don't want it to report fake data for the current shell (true for the shell in which it is run)
 	"jobs", // same reason as the one for 'hash'
 	"times", // same as above
 	"local"

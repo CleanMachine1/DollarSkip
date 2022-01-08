@@ -10,10 +10,10 @@ all: dollarskip
 install: dollarskip
 	$(STRIP) dollarskip
 	install -d $(DESTDIR)$(PREFIX)/bin
-	install -m 755 dollarskip $(DESTDIR)$(PREFIX)/bin/\$
+	install -m 755 dollarskip $(DESTDIR)$(PREFIX)/bin/\$$
 
 uninstall:
-	rm -f $(DESTDIR)$(PREFIX)/bin/\$
+	rm -f $(DESTDIR)$(PREFIX)/bin/\$$
 
 clean:
 	rm -f dollarskip
